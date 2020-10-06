@@ -1,8 +1,8 @@
-# <h1 style="color: #563d7c;">O básico de HTML e CSS 
- Informações relevantes para quem deseja começar a aprender HTML e CSS.</h1>
+# O básico de HTML e CSS 
+ Informações relevantes para quem deseja começar a aprender HTML e CSS.
 
  <ul>
- 	<h2 style="color: #e34c26;">Pontos principais:</h2>
+ 	<h2>Pontos principais:</h2>
  	<li>Técnicas iniciais para Desenvolvimento Web</li>
  	<li>Manipulação de fontes e textos</li>
  	<li>Conhecendo a função de Tags famosas e importantes do HTML</li>
