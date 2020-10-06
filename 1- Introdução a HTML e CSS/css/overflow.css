@@ -1,0 +1,38 @@
+/* OVERFLOW.HTML */
+*{
+   margin: 0;
+   padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+.pai{
+	 height: 150px; 
+	 width: 600px;
+	 background-color: gray;
+	 margin: 0 auto; 
+	 overflow: auto; /* esse parece quando se é preciso. */
+	 /* overflow: visible; <- esse é o padrão, onde msm que o conteúdo 
+	 da tag filha couber dentro da tag pai,ele ficará visivel.
+     
+     overflow: hidden; <- esse esconde o q n couber na tag pai, tornando
+     tudo q passa invisivel. s
+
+     overflow: scroll; <- esse cria o scroll e deixa visivel a barra
+     msm se ela n precisar ser utilizada. 
+
+     overflow-x: CONDIÇÃO; <- scrol barra no sentido horizontal.
+     overflow-y: CONDIÇÃO; <- scrol barra no sentido vertical.
+            
+     obs: display: none; <- o conteúdo das tags some e o tamanhdo não
+     vai ser calculado na tela. 
+
+     */
+ }
+
+ .filha{ font-size: 20px;
+         width: 700px;
+         text-align: center;
+ }

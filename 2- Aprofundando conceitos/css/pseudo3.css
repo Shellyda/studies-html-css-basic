@@ -1,0 +1,102 @@
+*{
+ margin:0;
+ padding:0;
+}
+
+
+html,body{
+  height:100%;
+}
+
+
+.pai{
+	text-align: center;
+	width: 100%;
+	padding: 90px 0;
+	background-color: gray;
+}
+
+.filho{
+	border: 1px solid black;
+	display: inline-block; 
+	width: 200px;
+	height: 300px;
+	margin-top: 50px;
+	background-color: purple;
+}
+
+div.filho p{
+	color:white;
+}
+}
+
+.pai div:first-child div.filho {
+	background-color: blue;
+}
+
+/* se torna prioridade */
+.pai div:nth-child(2n + 1) div.filho {
+	background-color: green;
+}
+
+.pai div:last-of-type div.filho{
+	background-color: blue;
+}
+
+ 
+
+
+
+/*
+ *{
+ margin:0;
+ padding:0;
+}
+
+
+html,body{
+  height:100%;
+}
+
+.parent{
+	background-color: #069;
+	width: 100%;
+	padding: 90px 0;
+	text-align: center;
+}
+
+.item{
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	background-color: green;
+	margin:20px 0;
+}
+
+/*
+
+Fórmulas: Estamos dizendo que a cada 3 elementos aplique o estilo, incluindo o 3.
+
+.parent div:nth-of-type(3n + 1) div.item{
+	background-color:red;
+}
+*/
+
+/*
+.parent div:first-child div.item{
+	background-color: purple;
+}
+*/
+
+/*
+.parent p:first-child{
+	color: orange;
+}
+*/
+
+/*
+.parent p:first-of-type{
+	color: orange;
+}
+*/
+

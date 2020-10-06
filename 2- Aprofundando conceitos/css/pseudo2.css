@@ -1,0 +1,87 @@
+*{
+ margin:0;
+ padding:0;
+}
+
+
+html,body{
+  height:100%;
+}
+
+ul{
+	list-style-position: inside; /* deixar os pontinhos visiveis */
+}
+
+
+.box{
+	width: 100%;
+}
+
+.box > div{ 
+	box-sizing: border-box;
+	float: left;
+	width: 33.3%;
+	height: 400px;
+	background-color: red;
+	border:1px solid black;
+}
+
+/*
+.p::after{
+	content:' Guilherme';
+	background-color: red;
+}
+
+.p::before{
+	content: 'Guilherme ';
+}
+
+*/
+
+/*
+p:empty{
+	width: 200px;
+	height: 200px;
+	background-color: orange;
+}
+*/
+
+/*
+Negação! Aplique o estilo para todas as divs que NÃO tenha a classe ONE.
+.box div:not(.one){
+	background-color: gold;
+}
+*/
+
+/*
+.box div:last-child p{
+	color: rgba(255,255,255,1);
+}
+
+*/
+
+/*
+Pegamos o último elemento do mesmo tipo
+.box div:last-of-type,.box p:last-of-type{
+	background-color: green;
+}
+
+*/
+
+
+/*
+
+/*De acordo com o tipo do elemento*/
+/*
+ul li:nth-of-type(2){
+	color:red;
+}
+*/
+
+/*
+De acordo com os filhos
+ul span:nth-child(6){
+	color:red;
+}
+
+*/

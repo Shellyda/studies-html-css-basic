@@ -1,0 +1,74 @@
+/*Resetando as definições do navegador */
+*{ 
+	margin: 0; /* margem */
+    padding: 0; /* espaçamento interno */
+}
+
+html, body{
+	height: 100%;
+}
+
+
+/*
+input[type=file]{
+	display: none;
+}
+
+
+label{
+	display:block;
+	margin:20px auto;
+	cursor: pointer;
+	font-size: 17px;
+	width: 220px;
+	height: 40px;
+	background-color:#ccc;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+}
+
+*/
+
+form{
+	text-align: center;
+	background-color: #ccc;
+	padding: 30px 0;
+}
+/*
+
+form select{
+	width: 220px;
+	height: 30px;
+	border:0;
+	padding-left:10px;
+	background-image:url('../imagens/sprite.png');
+	background-size:10px 20px;
+	background-repeat: no-repeat;
+	background-position: 96% 8px;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+}
+
+select::-ms-expand{
+	display: none;
+}
+*/
+
+input[type=checkbox]{
+	display: none;
+}
+
+label{
+	display: inline-block;
+	width: 30px;
+	height:30px;
+	background-color:green;
+}
+
+/* "Quando clicar na checkbox (+) aplique no elemento, exatamente, embaixo a checkbox no código." */
+input[type=checkbox]:checked + label{
+	background-color:red;
+} 
+

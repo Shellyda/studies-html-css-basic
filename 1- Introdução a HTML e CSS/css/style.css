@@ -1,0 +1,10 @@
+#div1 h2 {color: green; font-size:25PX;} 
+/* Para chamar ID's a um arquivo exteno se faz necessário o 
+#ONOMEDEFINIDO a tag{CONDIÇÕES} */
+
+.div2 h2{color: blue; font-size: 30px;}
+/* Para chamar as classes a um arquivo exteno se faz necessário o 
+.ONOMEDEFINIDO a tag{CONDIÇÕES} */
+
+/*obs: Para chamar apenas "tags filhas"(Só existem dentro do ID/class)
+deve se fazer: #div1 > h2{CONDIÇÕES} / .div2 > h2{CONDIÇÕES}; */

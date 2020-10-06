@@ -1,0 +1,102 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+.artigo{
+	width: 1200px; 
+	background-color: rgb(200, 200, 200);
+    margin: 40px auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.artigo h1{
+	color: rgb(50, 168, 131); /* representação binária 
+  color:red green blue(CÓDIGO NÚMERICO)*/ 
+	background:rgb(88, 8, 158);
+	font-family: "tahoma";
+	font-weight: normal;
+	font-style: oblique;
+  /*font-variant: small-caps; */
+}
+
+.artigo p{ color: #b4b4b4; /* representação hexadecimal */
+	font-weight: bold; /* Negrito */
+	font-size:17px;
+	font-family: "tahoma";
+    font-style: normal;
+    margin-top: 12px;
+    line-height: 40px;
+    text-align: left;
+ }
+
+
+
+
+
+/*Font Property
+To shorten the code, it is also possible to specify all the individual 
+font properties in one property.
+
+The font property is a shorthand property for:
+
+font-style
+font-variant
+font-weight
+font-size/line-height
+font-family
+
+Note: The font-size and font-family values are required. 
+If one of the other values is missing, their default value are used.
+
+a)The font-style property is mostly used to specify italic text.
+
+This property has three values:
+
+normal - The text is shown normally
+italic - The text is shown in italics
+oblique - The text is "leaning"
+ (oblique is very similar to italic, but less supported) 
+
+ex:
+p.normal {
+  font-style: normal;
+}
+
+p.italic {
+  font-style: italic;
+}
+
+p.oblique {
+  font-style: oblique;
+}
+
+b)The font-variant property specifies whether or not a text should be 
+displayed in a small-caps font.
+
+In a small-caps font, all lowercase letters are converted to uppercase 
+letters. However, the converted uppercase letters appears in a 
+smaller font size than the original uppercase letters in the text.
+
+ex:
+p.normal {
+  font-variant: normal;
+}
+
+p.small {
+  font-variant: small-caps;
+}
+
+c)The font-weight property specifies the weight of a font.
+ex:
+p.normal {
+  font-weight: normal;
+}
+
+p.thick {
+  font-weight: bold;
+}
+
+*/
+

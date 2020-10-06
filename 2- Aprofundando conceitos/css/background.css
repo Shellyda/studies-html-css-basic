@@ -1,0 +1,60 @@
+*{
+ margin:0;
+ padding:0;
+}
+
+
+html,body{
+  height:100%;
+}
+
+.bg{
+	width:500px; 
+	height: 800px;
+	margin: 0 auto;
+
+/*Backgrounds */
+	background-color: #064;
+    background-image: url('/Users/shell_000/Desktop/Curso Front-End/Imagens/pato.jpg');
+   /*background-image:('localização da imagem no computador(essa informação esta dentro das propriedades
+   da imagem escolhida)/Nome da imagem'); */
+
+/***/
+	/* As propriedades abaixo sempre começam do eixo X(horizontal) seguido pelo eixo Y(vertical)*/
+	/* Caso apenas um valor seja utilizado será usado para ambos*/
+	/**/
+     
+	background-position: right top; /*left,right,center / center,top,bottom */;
+	background-size: contain; /* cover,auto,px ou % */
+	background-repeat:repeat-y; /*no-repeat,repeat-x,repeat-y*/
+}
+
+/* contain -> The background image is resized to make sure 
+the image is fully visible.
+
+*auto -> a imagem fica do tamanho original preenchendo completamente 
+a box do elemento onde o background-image foi definido.
+Example:
+Specify the size of a background-image with "auto" and in pixels:
+
+#example1 {
+  background: url(mountain.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+Nesse exemplo2 a imagem fica do tamanho definido no background-image e não
+preenche totalmente a box do elemento.
+#example2 {
+  background: url(mountain.jpg);
+  background-repeat: no-repeat;
+  background-size: 300px 100px;
+}
+   
+*cover ->The background image is resized to cover the entire container, 
+even if it has to stretch the image or cut a little bit off one of the edges.
+
+Segue as definições de width e heigth do elemento. 
+*/
+
+

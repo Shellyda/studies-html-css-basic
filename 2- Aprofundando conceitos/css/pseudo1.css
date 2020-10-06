@@ -1,0 +1,93 @@
+*{
+ margin:0;
+ padding:0;
+}
+
+
+html,body{
+  height:100%;
+}
+
+.teste,.teste1,.teste2{
+	width: 300px;
+	margin-top:30px;
+	margin-left: 30px;
+	display: inline-block;
+	height: 30px;
+	/*
+	background-color: #ccc;
+	*/
+}
+
+.teste1{
+	background-color: rgb(98,98,98);
+}
+
+.teste2{
+	background-color: rgb(50,50,50);
+}
+
+/*
+.teste:hover{
+	height: 900px;
+	background-color:blue;
+}
+
+.teste:hover,.teste1,.teste2{
+	vertical-align: top;
+}
+
+*/
+
+/* Active serve para quando estamos com o mouse pressionado em cima do
+nosso elemento
+*/
+
+/*
+.teste:active{
+	background-color: black;
+}
+*/
+
+/*
+
+Focus serve para quando clicamos e focamos o nosso elemento do formulário.
+
+textarea,input
+
+.teste:focus{
+	background-color: red;
+}
+
+.textarea1{
+	display: block;
+	width: 600px;
+	height: 400px;
+}
+
+*/
+
+
+/*
+.link1:link{
+	color: orange;
+}
+
+*/
+
+a.link1{
+  color:red;
+}
+
+a.link1:visited{
+	color: green;
+}
+
+/* A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus 
+*/

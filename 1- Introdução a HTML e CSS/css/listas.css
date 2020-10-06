@@ -1,0 +1,80 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%; /* Design responsivo! altura adptável a qualquer
+	 tela que o usuário escolher usar. */
+}
+
+.lista3{
+	list-style-position: inside;
+	list-style-type: decimal; /* Números O Padrão da lista ol */
+	text-align: center;
+	margin-left: 20px;
+	margin-top: 5px;
+}
+
+.lista3 li{
+	color: green;
+}
+
+.lista, .lista2{
+	list-style-position: inside;
+	list-style-type: disc; /* bola fechada O Padrão da lista ul */
+	text-align: center;
+	margin-left: 20px;
+	margin-top: 5px;
+}
+
+
+/*Uma classe dentro da outra */
+.lista .Item3{
+	 color: rgb(235, 64, 52);
+	 font-weight: bold;
+	 margin-left: 7px;
+	}
+
+.lista li, .lista2 li{
+     color: blue;
+}
+
+
+/*Níveis de prioridade 
+ul.lista li.item3{CONDIÇÕES} <- MAIOR PRIORIDADE! (mais específico)
+.lista li.item3{CONDIÇÕES}
+.lista item3{CONDIÇÕES}
+.lista li{CONDIÇÕES} <- MENOR PRIORIDADE! (menos específico)
+*/
+
+
+
+
+/* Manipulação de medidas:
+
+ALTURA E LARGURA DO SITE (MAXIMO E MINIMO):
+Existe o max-width,o max-height e tb o min-width, o min-heitght.
+,são maneiras de limitar as medidas dando um limite a elas, reescrevendo sua definição anterior.
+(por conta de uma relação de prioridade).
+
+
+html, body {
+	height: 100%; -> Design responsivo! altura adptável a qualquer
+	 tela que o usuário escolher usar. 
+}
+
+
+.lista{
+	   text-align: center;
+       width: 100%; -> 100% da tela disponível no navegador! 
+       max-width:300px; /*com isso estou limitando o 100% a ser 300px. (reescrevendo a definição de cima) 
+       height: auto; -> É recomendado deixar a altura da
+        estrutura no automático, para, assim, evitar que falte ou
+        sobre espaçamento. Só definindo um limite para a altura em 
+        caso de manipulação de dimensões pré-definidas(Imagens, gifs, 
+        animações..).
+}
+
+
+*/

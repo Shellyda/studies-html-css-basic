@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/criandoform.css" />
+	<meta charset="utf-8" />
+	<title>Título do meu site</title>
+</head>
+<body>
+	<form ><!--Estrutura do formulário -->
+		<fieldset> <!-- grupo de elementos de um formulário! -->
+			<legend>Meu grupo do formulário!</legend> <!-- nome do grupo do formulário -->
+			<div><input type="text" name="nome" placeholder="Digite seu Nome"/></div>
+			<div><input type="text" name="e-mail" placeholder="Digite seu e-mail"/></div>
+			 
+			 <div> 
+				<select name="lista">
+				<option disabled selected>Qual sua idade ?</option>
+				<option value="20">20</option>
+				<option value="20">25+</option>
+				<option value="20">40+</option>
+			    </select>
+		    </div>
+            
+            <h3>Onde você mora ?</h3>
+		    <div class="radio"> <!-- input do tipo radio -->
+		    	<div><input type="radio" name="cidade" value="Rio de janeiro"><span>Rio de janeiro</span></div>
+		    	<div><input type="radio" name="cidade" value="Recife"><span>Recife</span></div>
+		    	<div><input type="radio" name="cidade" value="Vitória de Santo Antão"><span>Vitória de Santo Antão</span></div>
+           </div>
+
+           <h3>O que você gosta de comer?</h3>
+		    <div class="checkbox"> <!-- input do tipo checkbox -->
+		    	<div><input type="checkbox" name="comida[]" value="Bolo"><span>Bolo</span></div>
+		    	<div><input type="checkbox" name="comida[]" value="Lasanha"><span>Lasanha</span></div>
+		    	<div><input type="checkbox" name="comida[]" value="Galeto"><span>Galeto</span></div>
+           </div>
+         
+          <!-- caixa de msg -->
+          <div> <textarea name="observacao" placeholder="Possui alguma observação?"></textarea> </div>
+
+          <div> <input type="submit" name="acao" value="Enviar"> </div> <!-- input do tipo submit -->
+
+         
+
+
+
+		</fieldset>
+	</form>
+</body>
+
+<!-- observações:
+As input's:
+*tipo text -> abrir espaço para o usuário escrever e o placeholder serve para deixar uma msg sobre a msm tag.
+ <input type="text" name="email" placeholder="Digite seu email"/>
+
+*A tag select já possue na sua configuração padrão box-sizing: border-box. sendo necessásrio fazer certos ajustes nas suas dimensões em certas situações.
+*Usando a tag select não é possível fazer um 'placeholder'(escrever algo que fique sobre essa tag), então nessa situação se fez necessário disabilitar a opição dentro da select "Qual a sua idade?" e por padrão colocar ela como selecionada. <option disable select>Qual sua idade ?</option>
+            <div> 
+				<select name="lista">
+				<option disabled selected>Qual sua idade ?</option>
+				<option value="20">20</option>
+				<option value="20">25+</option>
+				<option value="20">40+</option>
+			    </select>
+		    </div>
+            
+
+*tipo radio -> abrir opções para o usuário escolher, exclusivamente, uma opção valida, isso se o  'nome' for devidamento colocado em cada input adicionado, para que o navegador entenda que todas estão falando de uma msm opção. 
+		      
+		    <h3>Onde você mora ?</h3>
+		    <div class="radio"> <-- input do tipo radio -----
+		    	<div><input type="radio" name="cidade" value="Rio de janeiro"><span>Rio de janeiro</span></div>
+		    	<div><input type="radio" name="cidade" value="Recife"><span>Recife</span></div>
+		    	<div><input type="radio" name="cidade" value="Vitória de Santo Antão"><span>Vitória de Santo Antão</span></div>
+           </div>
+
+*tipo checkbox -> permite a escolha de várias opções.
+         
+          <h3>O que você gosta de comer?</h3>
+		    <div class="checkbox"> <-- input do tipo checkbox ---
+		    	<div><input type="checkbox" name="comida[]" value="Bolo"><span>Bolo</span></div>
+		    	<div><input type="checkbox" name="comida[]" value="Lasanha"><span>Lasanha</span></div>
+		    	<div><input type="checkbox" name="comida[]" value="Galeto"><span>Galeto</span></div>
+           </div>

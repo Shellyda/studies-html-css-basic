@@ -1,0 +1,48 @@
+/*Resetando as definições do navegador */
+*{ 
+	margin: 0; /* margem */
+    padding: 0; /* espaçamento interno */
+}
+
+html, body{
+	height: 100%;
+}
+
+
+form *{
+	font-family: 'Mukta', sans-serif;
+}
+
+/*
+ Tudo dentro do formulário. Inluindo filhos > filhos
+     |
+     v
+form *{
+	font-family: "Open Sans";
+}
+
+*/
+
+
+/*
+Quando utilizamos o important o nível de especificação deixa de existir.
+Quando mais de 1 estão utilizando o important então o nível de especificação volta a contar.
+
+.box p{ -> MAIS ESPECÍFICO!
+	font-family: "Open Sans" !important;
+}
+
+.text{
+	font-family: tahoma !important;
+}
+*/
+
+
+/* Chamando um arquivo interno de fonte 
+
+@font-face{
+font-family: 'Mukta', sans-serif;
+scr: url( 'Localização do arquivo da fonte /nome do arquivo');
+}
+
+*/

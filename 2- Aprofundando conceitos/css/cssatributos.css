@@ -1,0 +1,123 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*
+*
+*
+Estilo para o conteúdo do nosso site
+*
+*
+*/
+
+html,body{
+	height: 100%; 
+}
+
+
+.text[type=text]{
+	background-color: green;
+}
+
+input[type=submit]{
+	background-color: blue;
+}
+
+/*
+
+CSS [attribute] Selector
+The [attribute] selector is used to select elements with a specified 
+attribute.
+
+The following example selects all <a> elements with a target attribute:
+
+Example:
+a[target] {
+  background-color: yellow;
+}
+
+TEM QUE SER IGUAL!
+exemplo:
+hmtl ---
+<a href="http://www.google.com">MEU LINK</a>
+
+style ---
+
+a[href="http://www.google.com"]{
+	background-color: yellow;
+}
+[href="http://www.google.com"]{
+	background-color: red;
+}
+*/
+
+/*
+
+PROCURE ENTRE OS ESPAÇOS DO ATRIBUTO.
+exemplo:
+
+hmtl ---
+<a attr="danki google pokemon">MEU LINK</a>
+
+style ---
+a[attr~="google"]{
+	background-color: blue;
+}
+
+*/
+
+/*
+
+ACHE A PALAVRA GOOGLE EM QUALQUER LUGAR.
+exemplo:
+hmtl ---
+<a attr="danki omelete google">MEU LINK</a>
+
+style ---
+
+a[attr*="google"]{
+	background-color: blue;
+}
+
+*/
+
+/*
+QUANDO COMEÇAMOS COM A PALAVRA GOOGLE SEGUIDO POR UM ACENTO.
+exemplo:
+html ---
+<a attr ~="google-danki">meu link!</a>
+
+style ---
+a[attr|="google"]{
+	background-color: yellow;
+}
+
+
+/*
+QUANDO COMEÇAMOS COM A PALAVRA.
+exemplo:
+hmtl ---
+<a attr="google danki jorge">MEU LINK</a>
+
+style ---
+
+a[attr^="goo"]{
+	background-color: red;
+}
+
+*/
+
+
+/*
+QUANDO TERMINAMOS COM A PALAVRA.
+hmtl ---
+<a attr="jorge danki google">MEU LINK</a>
+
+style ---
+
+a[attr$="google"]{
+	background-color: yellow;
+}
+
+*/

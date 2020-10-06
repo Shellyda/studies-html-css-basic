@@ -1,0 +1,199 @@
+
+<!--  Voltando para comentar sobre a propriedade Position, mto importante, que por falta de informação me enrolei dms nos últimos projetos. 
+
+Essa propriedade é um metodo de posicionamento, é um assunto complicado, mas é essencial para estruturação de layouts em HTML com CSS. 
+
+-->
+
+<!--  A propriedade Position tem 5 valores diferentes:
+
+static (Padrão)
+relative
+fixed
+absolute
+sticky
+
+Os elementos posicionados dessa forma é possível, e só assim usando Position, mover os elementos com as propriedades left, right, top e bottom. 
+
+*Nomeclatura exemplo: 
+
+position: relative;{
+left: 0;
+bottom: 20%;
+right: 10px;
+bottom: 30px;
+}
+   
+**OBS: Usando o valor STATIC que seria o padrão, as propriedades left, right, top e bottom NÃO causarão efeito sobre o elemento, já que esse valor segue o fluxo normal do documento html seguindo sua posição nele, como estamos acostumados a fazer nesse ponto. 
+
+-->
+
+<!-- Nos exemplo abaixo tente brincar com o código para perceber na prática o efeito de cada propriedade -->
+
+
+<!doctype html>
+<html>
+
+
+	<head>
+		<title>Título do meu website</title>
+		<meta charset="utf-8" />
+		<!-- <link href="css/position.css" rel="stylesheet" type="text/css"> --> 
+		
+<style>
+
+/* RELATIVE */
+.relative1 {
+  position: relative;
+  width: 700px;
+  height: 80px;
+  border: 2px solid green;
+}
+
+.relative2 {
+  position: relative;
+  top: -20px;
+  left: 20px;
+  border: 2px solid blue;
+  width: 500px;
+}
+
+/***/
+
+/* FIXED */
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  border: 2px solid red;
+  background-color: #ccc;
+}
+
+/***/ 
+
+/* ABSOLUTE */
+
+/* 
+
+O valor absolute é o mais complicado. Este valor se comporta como o fixed, porém tendo como referência a posição do elemento relativo mais próximo de onde está contido, ao invés do viewport. Se um elemento position:absolute não possuir elementos ancestrais posicionados relativamente, ele utilizará o body como referência. 
+
+ */
+
+.relative{
+	position: relative;
+	height: 400px;
+	width: 400px;
+	background-color: purple;
+	color: black;
+}
+.absolute{
+	position: absolute;
+	left: 200px;
+	height: 200px;
+	width: 300px;
+	background-color: yellow;
+	color: black;
+}
+
+/*
+Usar uma tag pai com position relative e sua tag filha com a position absolute é uma tecnica de preenchimento mto utilizada no design responsivo, já que o elemento filho será guiado dentro da tag pai, de acordo com as dimensões do pai. O que nos permite usar a filha para ocupar toda a área do pai, assim: 
+ */
+
+.tag-filha{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: pink;
+}
+
+.tag-pai{
+	position: relative;
+	width: 500px;
+	height: 400px;
+}
+
+/***/
+
+/* STICKY */
+
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+
+.box1{
+	border: 2px solid purple;
+}
+
+/***/
+
+</style>
+
+	</head>
+
+<body>
+	<!-- RELATIVE -->
+	<h2>Position - Relative:</h2>
+	<div class="relative1"><p>Relative se comporta igualmente ao static, a menos que se adicione propriedades extras no estilo do elemento.(top, bottom, left, right)</p></div>
+
+	<div class="relative2"><p>Definindo as propriedades top, right, bottom, e left em um elemento position:relative o ajustamos em relação à posição atual dele. Outros conteúdos não vão se ajustar para se encaixarem em qualquer espaço deixado por esse elemento.</p></div>
+
+	<!-------->
+
+	<!-- FIXED -->
+    <div class="fixed"><p>Um elemento fixo - fixed - é posicionado relativamente ao "viewport", isso significa que ele sempre ficará no mesmo lugar mesmo que haja rolagem na página. Assim como o relative, as propriedades top, right, bottom e left também são utilizadas.</p></div>
+
+    <!-------->
+    
+    <!-- ABSOLUTE --> 
+    <h2>Position - Absolute:</h2>
+    <div class="relative"> <p>Este elemento está com position:relative. Se este elemento tivesse com position: static; seu elemento filho escaparia e se posicionaria em relação ao elemento body do documento</p>
+    	<div class="absolute"><p>Este elemento é position:absolute. E é posicionado em relação ao seu elemento pai.</p></div> <!-- tag filha -->
+    </div> <!-- tag pai com a position relative -->
+
+   
+    <!----Exemplo da tecnica de preenchimento com absolute ---->
+    <h2>Tecnica de preenchimento com position absolute:</h2>
+<div class="tag-pai">
+       <div class="tag-filha"><p>Preenchendo totalmento o espaço da tag pai</p></div><!-- tag filha -->
+</div> <!-- tag pai -->
+
+    <!------->
+
+    
+<!-- STICKY -->
+<h2>Position - Sticky:</h2>
+<div class="box1">
+<p>Tente usar a <b>scroll barra</b> dentro desse frame para entender como o posicionamento sticky funciona. </p>
+<p>Note: IE/Edge 15 e as versões mais novas não suportam a position sticky.</p>
+</div> <!-- box 1 -->
+
+<div class="sticky">Eu sou uma sticky!</div><!-- sticky -->
+
+<div class="box2" style="padding-bottom:2000px">
+  <p>Nesse exemplo, o elemento fica no topo da página (top:0), mudando essa propriedade para outra(right,bottom,left) ou seu valor modifica o ponto de partida para o efeito, quando vc chega no elemento posicionado com sticky, com a scroll barra.
+  </p>
+  <p>Quando vc volta a pág com a scroll barra ele fica no seu local pré-definido novamente, tirando o efeito do sticky. Vai rolando pra baixo pra perceber como funciona essa última propriedade. :)</p>
+</div><!-- box 2 -->
+
+<!------>
+
+<!-- fim dos exemplos práticos -->
+
+
+
+
+</body>
+	
+	</html>
+
+
+
+

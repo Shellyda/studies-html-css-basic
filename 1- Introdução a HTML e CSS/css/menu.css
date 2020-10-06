@@ -1,0 +1,40 @@
+/*Resetando as definições do navegador */
+*{ 
+	margin: 0; /* margem */
+    padding: 0; /* espaçamento interno */
+}
+
+a{text-decoration: none;} 
+
+/* Estrutura do menu */
+.menu{width: 900px; margin: 30px auto; text-align: center;} 
+     /* LARGURA ; MARGEM ; ALINHAMENTO DO TEXTO:centro/direita/esquerda; ;
+
+/*CONTEÚDO DO MENU */
+.menu a{ color:red; padding-right: 8px;
+	     border-right: 3px solid red;
+	    /* Mesma  situação acima
+	     border-right: 3px;
+	     border-style: solid;
+	     border-color: red; */
+	     font-size:20px;
+         margin: 0 px;
+}
+
+
+/* Prioridades:
+  Primeira situação - Simples
+  exemplo:
+     codigo A (de cima)
+
+     codigo A com modificações (de baixo) <-- MAIOR PRIORIDADE! 
+     Assim, o codigo levado em consideração pelo navegador é o de baixo.
+
+Segunda situação - Chamando Tags
+exemplo:
+      div.menu a{CONDIÇÕES} <-- MAIOR PRIORIDADE!
+      
+      .menu a{CONDIÇÕES}
+
+      Nessa situação vemos que msm o código sendo escrito em baixo 
+      a prioridade do código acima independe da sua posição. */

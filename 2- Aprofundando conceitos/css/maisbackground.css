@@ -1,0 +1,37 @@
+*{
+ margin:0;
+ padding:0;
+}
+
+
+html,body{
+  height:100%;
+}
+
+.bg{
+	width:100%; 
+	height: 60vh;
+	margin: 0 auto;
+
+/*Backgrounds */
+	background-color: #064;
+    background-image: url('/Users/shell_000/Desktop/Curso Front-End/Imagens/parallax.jpg');
+   /*background-image:('localização da imagem no computador(essa informação esta dentro das propriedades
+   da imagem escolhida)/Nome da imagem'); */
+   background-attachment: fixed; /* efeito parallax */
+
+/***/
+	/* As propriedades abaixo sempre começam do eixo X(horizontal) seguido pelo eixo Y(vertical)*/
+	/* Caso apenas um valor seja utilizado será usado para ambos*/
+	/**/
+     
+	background-position: bottom; /*left,right,center / center,top,bottom */;
+	background-size: cover; /*contain,cover,auto,px ou % */
+	background-repeat:no-repeat; /*no-repeat,repeat-x,repeat-y*/
+}
+
+.box{
+	background-color: gray;
+	height: 900px;
+	width: 500px;
+}

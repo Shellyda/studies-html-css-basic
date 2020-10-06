@@ -1,0 +1,101 @@
+/*Resetando as definições do navegador */
+*{ 
+	margin: 0; /* margem */
+    padding: 0; /* espaçamento interno */
+}
+
+html, body{
+	height: 100%;
+}
+
+/* Estrutura do formulário */
+form{
+	width: 96%;
+	max-width: 800px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* Estilizando a tag select */
+form select{
+	outline: 0;
+	font-family: tahoma;
+	color: rgb(130,130,130);
+	display: inline-block;
+	padding: 6px 45px;
+	margin: 10px;
+	width:calc(80% + 94px); /* artificío para usar porcentagem e px. */
+    border: 1px solid #ccc; /* se n for definido uma borda para o select o navegador coloca uma borda padrão. */
+}
+
+
+form fieldset{
+	padding: 20px 40px;
+	border: 1px solid #ccc;
+}
+
+form legend{
+	font-family: tahoma;
+	text-align: left;
+	font-size: 17px;
+	color: rgb(130,130,130);
+}
+
+/* input's */
+/* text */
+input[type=text] {
+	display: inline-block;
+	padding: 7px 45px;
+	margin: 10px;
+	width: 80%;
+    border: 1px solid #ccc;
+    font-family: tahoma;
+}
+
+/* retirando o efeito do outline padrão */
+form input[type=text]{ 
+	outline: 0;
+}
+ 
+/* radio e checkbox */
+.radio, .checkbox{
+	text-align: left;
+	font-family: tahoma;
+}
+
+h3{
+	color: rgb(130,130,130);
+	text-align: left;
+	margin: 10px 5px;
+	font-family: tahoma;
+}
+
+
+/* textarea */
+textarea{
+	outline: 0;
+	padding: 50px 45px;
+	margin-top: 20px;
+	width: 80%;
+    border: 1px solid #ccc;
+    resize: none; /* Não permitir a mudança das dimensões da caixa de msg pelo usuário */
+}
+
+/* submit */
+input[type=submit]{
+	border: 0;
+	outline: 0;
+	cursor: pointer; /* estilo do cursor ao passar por cima */
+	border: 1px solid black;
+	margin-top: 30px;
+    background-color: gray;
+	font-family: tahoma;
+}
+
+
+
+
+
+
+
+

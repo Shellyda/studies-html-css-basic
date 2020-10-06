@@ -1,0 +1,36 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+.pai{
+	background-color: blue;
+    width: 600px;
+    padding: 20px 0; /* top/bottom  letf/right */
+	margin: 0 auto; /* centralizando em relação aos elementos da div filha. */
+}
+
+.filha{
+	  color: white;
+	  text-align: center;
+	  font-size: 50px;
+	  background-color: red;
+      box-sizing: border-box; /* definindo medidas para "emoldurar" os elementos */
+      width: 300px;
+      height: 100px;
+      float: left; /*substituí o display: inline-block; 
+      Tem a msm função de enquadrar as tags em uma linha e empedir modificações 
+      na estrutura da tag pai.
+      Porém, o float não leva em consideração as tags filhas, para isso se 
+      faz necessário corrigir. Nesse exemplo, foi se utilizado uma "div cega"
+      apenas uma div com estilo. 
+      A vantagem é não precisar corrigir o acrescimo de 4px a direita
+      na margem da estrutura. Os elementos vão para o sentido definido
+      direito, esquerda, cima, baixo.*/
+      border: 1px solid black;
+}

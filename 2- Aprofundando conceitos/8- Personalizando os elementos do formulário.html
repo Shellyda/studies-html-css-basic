@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/personalizandoform.css" />
+	<meta charset="utf-8" />
+	<title>Título do meu site</title>
+</head>
+<body>
+	   <form ><!--Estrutura do formulário -->
+			<!--
+			<input id="file" type="file" name="file" />
+			<label for="file">Clique aqui!</label>
+			-->
+			<!--
+			<select>
+				<option>Item 1</option>
+				<option>Item 2</option>
+			</select>
+			-->
+			<!-- O label tem a função de guardar o endereço id e aplicar a msm ação do elemento que possui esse id. -->
+			<div>
+			<input name="checkbox" type="checkbox" id="check1" />
+			<label for="check1" />
+			</div>
+			<div>
+			<input name="checkbox" type="checkbox" id="check2" />
+			<label for="check2" />
+			</div>
+		</form>
+
+		
+	</body>
+
+<!-- Observações:
+
+  Para personalizar e ,assim, remover a definição padrão sobre os elementos é necessário aplicar:
+	 
+	 ELEMENTO{
+	 appearance:none; -> EM ALGUNS NAVEGADORES SÓ ISSO NÃO É O BASTANTE.
+	-webkit-appearance:none; -> CHROME!
+	-moz-appearance:none; -> MOZILA!
+    }
+
+**INTERNET EXPLORER 
+ELEMENTO::-ms-expand{
+	display: none;
+}
+
+-->
+
+
+
+		
