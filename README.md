@@ -4,7 +4,7 @@ Relevant information for those who want to start learning HTML and CSS.
 
 ## Overview
 
-Welcome to the "O básico de HTML e CSS" repository! This repository provides essential information for individuals looking to kickstart their journey into HTML and CSS.
+Welcome! This repository provides essential information for individuals looking to kickstart their journey into HTML and CSS.
 
 ### Main Points:
 
